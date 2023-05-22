@@ -1,0 +1,8 @@
+{%extends 'base.html'%}
+{%block body%}
+    <h1>welcome user {{request.user}}</h1>
+    <div class="container">
+        <a href="{%url 'task-add'%}" class="btn btn-info">add new todo</a>
+        <a href="{%url 'task-list'%}"class="btn btn-info">list all todo</a>
+    </div>
+{%endblock%}
